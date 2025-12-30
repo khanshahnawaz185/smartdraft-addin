@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:type="MailApp">
+  <Id>12345678-1234-1234-1234-123456789012</Id>
+  <Version>1.0.0.0</Version>
+  <ProviderName>SmartDraft</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <DisplayName DefaultValue="SmartDraft - AI Email Assistant"/>
+  <Description DefaultValue="Professional AI Email Assistant Add-in for Outlook. Supports Outlook Web and Desktop."/>
+  <Hosts>
+    <Host xsi:type="MailHost">
+      <DesktopFormFactor>
+        <FunctionFile resid="functionfile"/>
+        <ExtensionPoint xsi:type="MessageReadCommandSurface">
+          <OfficeTab id="TabDefault">
+            <Group id="msgReadGroup">
+              <Label resid="groupLabel"/>
+              <Control xsi:type="Button" id="msgReadOpenPaneButton">
+                <Label resid="paneButtonLabel"/>
+                <Supertip>
+                  <Title resid="paneButtonTooltip_title"/>
+                  <Description resid="paneButtonTooltip_description"/>
+                </Supertip>
+                <Action xsi:type="ShowTaskPane">
+                  <SourceLocation resid="taskpaneurl"/>
+                </Action>
+              </Control>
+            </Group>
+          </OfficeTab>
+        </ExtensionPoint>
+      </DesktopFormFactor>
+      <MobileFormFactor>
+        <FunctionFile resid="functionfile"/>
+        <ExtensionPoint xsi:type="MobileMessageReadCommandSurface">
+          <Control xsi:type="MobileButton" id="msgReadMobileOpenPaneButton">
+            <Label resid="paneButtonLabel"/>
+            <Icon resid="icon-16"/>
+            <Action xsi:type="ShowTaskPane">
+              <SourceLocation resid="taskpaneurl"/>
+            </Action>
+          </Control>
+        </ExtensionPoint>
+      </MobileFormFactor>
+    </Host>
+  </Hosts>
+  <Resources>
+    <bt:Images>
+      <bt:Image id="icon-16" resid="icon-16"/>
+    </bt:Images>
+    <bt:Urls>
+      <bt:Url id="functionfile" resid="functionfile"/>
+      <bt:Url id="taskpaneurl" resid="taskpaneurl"/>
+    </bt:Urls>
+    <bt:ShortStrings>
+      <bt:String id="groupLabel" DefaultValue="SmartDraft"/>
+      <bt:String id="paneButtonLabel" DefaultValue="AI Assistant"/>
+      <bt:String id="paneButtonTooltip_title" DefaultValue="SmartDraft"/>
+    </bt:ShortStrings>
+    <bt:LongStrings>
+      <bt:String id="paneButtonTooltip_description" DefaultValue="Open SmartDraft AI Email Assistant to analyze and draft emails"/>
+      <bt:String id="functionfile" DefaultValue="https://yourserver.com/taskpane/functions.html"/>
+      <bt:String id="taskpaneurl" DefaultValue="https://yourserver.com/taskpane/taskpane.html"/>
+      <bt:String id="icon-16" DefaultValue="https://yourserver.com/assets/icon-16.png"/>
+    </bt:LongStrings>
+  </Resources>
+  <Permissions>ReadWriteItem</Permissions>
+</OfficeApp>
