@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>SmartDraft - AI Email Assistant</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://appsforoffice.microsoft.com/fabric/2.14.1/fabric.min.css" />
+    <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
+    <link rel="stylesheet" href="taskpane.css" />
+</head>
+<body class="ms-font-sm">
+    <div id="content-header">
+        <div class="ms-Grid-row">
+            <div class="ms-Grid-col ms-sm12">
+                <h2 class="ms-font-xl ms-fontWeight-semibold" id="header-title">SmartDraft AI Assistant</h2>
+            </div>
+        </div>
+    </div>
+    <div id="content-main">
+        <div class="ms-Grid">
+            <div class="ms-Grid-row">
+                <div class="ms-Grid-col ms-sm12">
+                    <div id="status"></div>
+                </div>
+            </div>
+            <div class="ms-Grid-row">
+                <div class="ms-Grid-col ms-sm12">
+                    <textarea id="email-analysis" class="email-textarea" placeholder="Email analysis will appear here..." readonly></textarea>
+                </div>
+            </div>
+            <div class="ms-Grid-row">
+                <div class="ms-Grid-col ms-sm6">
+                    <button id="analyze-btn" class="ms-Button ms-Button--primary">
+                        <span class="ms-Button-label">Analyze Email</span>
+                    </button>
+                </div>
+                <div class="ms-Grid-col ms-sm6">
+                    <button id="generate-btn" class="ms-Button ms-Button--primary">
+                        <span class="ms-Button-label">Generate Reply</span>
+                    </button>
+                </div>
+            </div>
+            <div class="ms-Grid-row" style="margin-top: 15px;">
+                <div class="ms-Grid-col ms-sm12">
+                    <h4>Analysis Results:</h4>
+                    <div id="sentiment" class="result-box">
+                        <strong>Sentiment:</strong> <span id="sentiment-value">-</span>
+                    </div>
+                    <div id="urgency" class="result-box">
+                        <strong>Urgency:</strong> <span id="urgency-value">-</span>
+                    </div>
+                    <div id="key-points" class="result-box">
+                        <strong>Key Points:</strong>
+                        <ul id="key-points-list"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="taskpane.js"></script>
+</body>
+</html>
