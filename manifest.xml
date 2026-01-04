@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+62<?xml version="1.0" encoding="UTF-8"?>
 <OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1"
            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
            xsi:type="MailApp">
@@ -59,9 +59,9 @@
     </bt:ShortStrings>
     <bt:LongStrings>
       <bt:String id="paneButtonTooltip_description" DefaultValue="Open SmartDraft AI Email Assistant to analyze and draft emails"/>
-      <bt:String id="functionfile" DefaultValue="https://yourserver.com/taskpane/functions.html"/>
-      <bt:String id="taskpaneurl" DefaultValue="https://yourserver.com/taskpane/taskpane.html"/>
-      <bt:String id="icon-16" DefaultValue="https://yourserver.com/assets/icon-16.png"/>
+      <bt:String id="functionfile" DefaultValue="https://khanshahnawaz185.github.io/smartdraft-addin/taskpane/functions.html"/>
+      <bt:String id="taskpaneurl" DefaultValue="https://khanshahnawaz185.github.io/smartdraft-addin/taskpane/taskpane.html"/>
+      <bt:String id="icon-16" DefaultValue="https://khanshahnawaz185.github.io/smartdraft-addin/assets/icon-16.png"/>
     </bt:LongStrings>
   </Resources>
   <Permissions>ReadWriteItem</Permissions>
