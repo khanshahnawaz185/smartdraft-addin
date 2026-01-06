@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>SmartDraft - AI Email Assistant</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://appsforoffice.microsoft.com/fabric/2.14.1/fabric.min.css" />
+    <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
+    <link rel="stylesheet" href="taskpane.css" />
+</head>
+<body class="ms-font-sm">
+    <div id="content-header">
+        <div class="ms-Grid-row">
+            <div class="ms-Grid-col ms-sm12">
+                <h2 class="ms-font-xl ms-fontWeight-semibold" id="header-title">SmartDraft AI Assistant</h2>
+            </div>
+        </div>
+    </div>
+    <div id="content-main">
+        <div class="ms-Grid">
+            <div class="ms-Grid-row">
+                <div class="ms-Grid-col ms-sm12">
+                    <div id="status"></div>
+                </div>
+            </div>
+            <div class="ms-Grid-row">
+                <div class="ms-Grid-col ms-sm12">
+                    <textarea id="email-analysis" class="ms-fontSizeMs ms-fontColor-neutralPrimary" placeholder="Email analysis will appear here..." readonly></textarea>
+                </div>
+            </div>
+            <div class="ms-Grid-row">
+                <div class="ms-Grid-col ms-sm12">
+                    <div>
+                        <label>Sentiment:</label>
+                        <span id="sentiment-value">-</span>
+                    </div>
+                </div>
+            </div>
+            <div class="ms-Grid-row">
+                <div class="ms-Grid-col ms-sm12">
+                    <div>
+                        <label>Urgency:</label>
+                        <span id="urgency-value">-</span>
+                    </div>
+                </div>
+            </div>
+            <div class="ms-Grid-row">
+                <div class="ms-Grid-col ms-sm12">
+                    <div>
+                        <label>Key Points:</label>
+                        <ul id="key-points-list"></ul>
+                    </div>
+                </div>
+            </div>
+            <div class="ms-Grid-row">
+                <div class="ms-Grid-col ms-sm6">
+                    <button id="analyze-btn" class="ms-Button"><span class="ms-Button-label">Analyze Email</span></button>
+                </div>
+                <div class="ms-Grid-col ms-sm6">
+                    <button id="generate-btn" class="ms-Button"><span class="ms-Button-label">Generate Reply</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="taskpane.js"></script>
+</body>
+</html>
