@@ -1,0 +1,35 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "**",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/manifest.xml",
+      "dest": "/manifest.xml",
+      "headers": {
+        "Content-Type": "application/xml",
+        "Access-Control-Allow-Origin": "*"
+      }
+    },
+    {
+      "src": "/taskpane.html",
+      "dest": "/taskpane.html"
+    },
+    {
+      "src": "/taskpane.js",
+      "dest": "/taskpane.js"
+    },
+    {
+      "src": "/taskpane.css",
+      "dest": "/taskpane.css"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
+    }
+  ]
+}
