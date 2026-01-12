@@ -59,7 +59,7 @@
     </bt:ShortStrings>
     <bt:LongStrings>
       <bt:String id="paneButtonTooltip_description" DefaultValue="Open SmartDraft AI Email Assistant to analyze and draft emails"/>
-      <bt:String id="functionfile" DefaultValue="https://khanshahnawaz185.github.io/smartdraft-addin/functions.html"/>
+      <bt:String id="functionfile" DefaultValue="https://khanshahnawaz185.github.io/smartdraft-addin/taskpane.html"/>
       <bt:String id="taskpaneurl" DefaultValue="https://khanshahnawaz185.github.io/smartdraft-addin/taskpane.html"/>
       <bt:String id="icon-16" DefaultValue="https://khanshahnawaz185.github.io/smartdraft-addin/assets/icon-16.png"/>
     </bt:LongStrings>
